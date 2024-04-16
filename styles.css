@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('file:///C:/Users/Arjun%20Gautam/Desktop/practice/Designer.png');
+    background-size: cover;
+    font-family: 'Great Vibes', cursive; /* Fancy font */
+    font-weight: bold; /* Make font fatter */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0); /* Make form background transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-left: 200px; /* Shift form more to the right */
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px; /* Reduced spacing */
+}
+
+label {
+    text-align: right;
+    padding-right: 10px;
+    align-self: center;
+}
+
+input[type="text"] {
+    margin-bottom: 5px; /* Further reduced spacing */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    font-family: 'Great Vibes', cursive; /* Fancy font */
+}
+
+input[type="submit"] {
+    grid-column: span 2;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #FF007F; /* Rose color */
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive; /* Fancy font */
+}
+
+.qr-code {
+    margin-top: 20px; /* Space at the bottom for a QR code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code img {
+    width: 200px; /* Control the size of the QR code */
+    height: auto;
+}
